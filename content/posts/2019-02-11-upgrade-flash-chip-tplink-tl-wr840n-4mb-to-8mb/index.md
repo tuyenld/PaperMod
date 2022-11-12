@@ -61,7 +61,9 @@ Because it used the same CPU and different in flash and RAM chip.
 | RAM         | Winbond W9751G6JB-25 (64MB)                                                  | ESMT M14D5121632A (64MB)                                               |
 | Flash       | GigaDevice GD25Q64CSIG (8MB)                                                 | GigaDevice GD25Q32B (4MB)                                              |
 
-{{< alert icon="👉" text="You are able to use openwrt-18.06.1-ramips-mt76x8-tl-**wr840n-v5**-squashfs-sysupgrade with 8MB flash chip, your router still booting but you can not any configuration after reboot. You may got error `Your image is probably too big, leaving not enough space for jffs2`." />}}
+```text
+👉 You are able to use openwrt-18.06.1-ramips-mt76x8-tl-**wr840n-v5**-squashfs-sysupgrade with 8MB flash chip, your router still booting but you can not any configuration after reboot. You may got error `Your image is probably too big, leaving not enough space for jffs2`.
+```
 
 In the first time, I faced this problem. I can not save any configuration after reboot. If you look at boot log, it read:
 
@@ -183,10 +185,14 @@ All file which I used in [here](https://drive.google.com/file/d/1kqXvFQYrolipvrr
 
 After use CH341A to program new flash chip, you can re-solder new flash chip on target board.
 
-{{< alert icon="👉" text="If your board can not booting, don't worry. You can use [Clip Socket Adapter](https://www.ebay.com/itm/SOIC8-SOP8-Flash-Chip-IC-Test-Clip-Socket-Adapter-BIOS-CH341A-USB-Programmer-/372555847443) to try program flash again with out desolder chip." />}}
+```text
+👉 If your board can not booting, don't worry. You can use [Clip Socket Adapter](https://www.ebay.com/itm/SOIC8-SOP8-Flash-Chip-IC-Test-Clip-Socket-Adapter-BIOS-CH341A-USB-Programmer-/372555847443) to try program flash again with out desolder chip.
+```
 
 ## 3. Enjoy
 
 ![Software with new flash chip (8MB)](images/software_status.jpg)
 
-{{< alert icon="👉" text="I used image come from **TL-WR841N v13.x**, except for LED will not working, everything work well (Wi-Fi, Ethernet, Router feature)." />}}
+```text
+👉 I used image come from **TL-WR841N v13.x**, except for LED will not working, everything work well (Wi-Fi, Ethernet, Router feature).
+```
